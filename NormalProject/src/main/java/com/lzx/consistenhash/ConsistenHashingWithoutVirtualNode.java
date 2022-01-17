@@ -1,4 +1,4 @@
-package com.lzx.comsistenhash;
+package com.lzx.consistenhash;
 
 import java.util.SortedMap;
 import java.util.TreeMap;

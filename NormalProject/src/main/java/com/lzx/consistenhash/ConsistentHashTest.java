@@ -1,4 +1,4 @@
-package com.lzx.comsistenhash;
+package com.lzx.consistenhash;
 
 
 import lombok.Data;
@@ -46,7 +46,7 @@ abstract class DistributeHash {
      *
      * @return
      */
-    private String getObjectNode(String object) {
+    public String getObjectNode(String object) {
         long hash = hash(object);
         SortedMap<Long, String> tailMap = virtualNodes.tailMap(hash);
         Long key = tailMap.isEmpty() ? virtualNodes.firstKey() : tailMap.firstKey();
